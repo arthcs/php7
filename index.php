@@ -1,5 +1,5 @@
 <?php
 
-echo "php teste";
+echo "Raiz do Curso";
 
 ?>
