@@ -1,6 +1,7 @@
 <?php 
 
 $diaSemana = date("w");
+echo "Retorno: ".$diaSemana."<br>";
 
 switch($diaSemana){
 
