@@ -3,7 +3,7 @@
 $hierarquia = array(
 	array(
 		'nome_cargo' => 'CEO',
-		'subordidados' =>array(
+		'subordinados' =>array(
 			//inicio: Diretor Comercial
 			array(
 				'nome_cargo' => 'Diretor Comercial',
@@ -54,18 +54,22 @@ $hierarquia = array(
 print_r($hierarquia);
 
 function exibe($cargos){
+
 	$html = '<ul>';
 
 	foreach ($cargos as $cargo) {
+
 		$html .= "<li>";
 
-		$html .= $cargo["nome_cargo"];
+		$html .= $cargo['nome_cargo'];
+
+		//$html .= $cargo['subordinados'];
 
 		if(isset($cargo['subordinados']) && count($cargo['subordinados']) > 0 ){
-			
+
 			echo "ok";
 
-			$hmtl .= exibe($cargo['subordinados']);
+			$html .= exibe($cargo['subordinados']);
 
 		}
 
