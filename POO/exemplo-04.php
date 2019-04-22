@@ -13,12 +13,12 @@ class Endereco{
 
 	}
 
-	public function __destruct(){
+	public function __destruct(){ //ultima coisa a ser executada antes de liberar a memória, quando chega o fim do arquivo ou seja a última é carregada ele executa o __destruct().é chmado tambem quando usado a funcção unset();
 		var_dump("DESTRUIR");
 
 	}
 
-	public function __toString(){
+	public function __toString(){ // é executado quando é dado um echo no objeto
 		return $this->logradouro. ", ".$this->numero.", ".$this->cidade;
 	}
 
