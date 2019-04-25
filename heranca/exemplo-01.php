@@ -4,22 +4,22 @@ class Documento{
 
 	private $numero;
 
-	private function getNumero(){
+	public function getNumero(){
 
 		return $this->numero;
 	}
 
-	public function setNumero($a){
+	public function setNumero($n){
+
 		$this->numero = $n;
 	}
 
 }
 
-class CPF extends Docmumento{
+class CPF extends Documento{
 
 	public function validar(){
 
-		//validação do CPF
 		$numeroCPF = $this->getNumero();
 
 		//validação do CPF
@@ -33,4 +33,9 @@ $doc = new CPF();
 
 $doc->setNumero("111222333-44");
 
+var_dump($doc->validar());
+
+echo "<br>";
+
+echo $doc->getNumero();
  ?>
