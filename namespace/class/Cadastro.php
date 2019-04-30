@@ -7,15 +7,15 @@ class Cadastro{
 	private $senha;
 
 	//get
-	public function getName(){
+	public function getName(){//:sTring //funcina somente em php7
 		return $this->nome;
 	}
 
-	public function getEmail(){
+	public function getEmail(){//:sTring //funcina somente em php7
 		return $this->email;
 	}
 
-	public function getSenha(){ // :sTring funcina somente em php7
+	public function getSenha(){//:sTring //funcina somente em php7
 		return $this->senha;
 	}
 
