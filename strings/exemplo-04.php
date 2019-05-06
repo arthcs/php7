@@ -2,6 +2,9 @@
 
 $frase = "A repetição é a mãe da retenção";
 
+echo $frase;
+echo "<br>";
+
 $palavra = "mãe";
 
 echo "Quantas casas é preciso percorer até a palavra mãe: ";
